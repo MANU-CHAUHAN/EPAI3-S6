@@ -138,7 +138,7 @@ def generate_random_number_for_vehicles_again(start_range=1000, end_range=9999, 
 
     return [state + str(d1) + l1 + l2 + str(d2) for _ in range(15) for d1 in [random.randint(10, 99)] for l1, l2 in
             zip(*random.sample(population=upper_letters, k=2)) for d2 in
-            [random.randint(start_range, end_range)]], partial(generate_random_number_for_vehicles_again, 1000, 9999)
+            [random.randint(start_range, end_range)]], partial(generate_random_number_for_vehicles_again, start_range=1000, end_range=9999)
 
 
 def generate_random_number_for_vehicles_again_using_partial(state):
