@@ -173,6 +173,8 @@ Part 2:
 
 6. Write the above again from scratch where KA can be changed to DL, and 1000/9999 ranges can be provided. Now use a partial function such that 1000/9999 are hardcoded, but KA can be provided
 
+-----------
+-----------
 
 ## Notes:
 
@@ -261,7 +263,8 @@ Whereas, `[]` resorts to directly building a list, thus avoiding name resolution
 
 
 ## Dictionaries in Python: Going deeper in the rabbit hole
-Dictionary in Python play a pivotal role as they are the underlying mechanism for many language features such as classes and instances use dictionary to store their attributes.
+
+Dictionary in Python play a pivotal role as they are the underlying mechanism for many language features such as: classes and instances use dictionary to store their attributes, module contents use dictionry and keyword arguments use them too.
 
 > [How are Python's built-in Dictionaries Implemented?](https://stackoverflow.com/a/44509302/3903762)
 
@@ -280,7 +283,7 @@ Dictionary in Python play a pivotal role as they are the underlying mechanism fo
 Note: This is implementation detail in 3.6 and NOT a language feature. This became a language feature since Python 3.7
 
 
-> Python's Dictionaries are Hash Tables
+### Python's Dictionaries are Hash Tables
 
 For a long time, it worked exactly like this. Python would preallocate 8 empty rows and use the hash to determine where to stick the key-value pair. For example, if the hash for the key ended in 001, it would stick it in the 1 (i.e. 2nd) index (like the example below.)
     
@@ -301,7 +304,7 @@ Collisions slow things down, and an attacker could theoretically use hash collis
 
 The wasted space described above has led us to modify the implementation of dictionaries, with an exciting new feature that dictionaries are now ordered by insertion.
 
->The New Compact Hash Tables
+### The New Compact Hash Tables
 
 We start, instead, by preallocating an array for the index of the insertion.
 
@@ -319,7 +322,7 @@ We retain constant lookup time, with minor speed losses in some cases and gains 
 
 **_Raymond Hettinger_** introduced this on python-dev in December of 2012. It finally got into CPython in Python 3.6. Ordering by insertion was considered an implementation detail for 3.6 to allow other implementations of Python a chance to catch up.
 
->Shared Keys
+### Shared Keys
 
 Another optimization to save space is an implementation that shares keys. Thus, instead of having redundant dictionaries that take up all of that space, we have dictionaries that reuse the shared keys and keys' hashes. You can think of it like this:
 
