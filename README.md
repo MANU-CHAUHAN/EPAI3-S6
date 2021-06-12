@@ -257,6 +257,8 @@ call the function.
 
 Whereas, `[]` resorts to directly building a list, thus avoiding name resolution and function call.
 
+----------------
+
 
 ## Dictionaries in Python: Going deeper in the rabbit hole
 Dictionary in Python play a pivotal role as they are the underlying mechanism for many language features such as classes and instances use dictionary to store their attributes.
