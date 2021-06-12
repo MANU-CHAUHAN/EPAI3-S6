@@ -24,7 +24,7 @@ suits = ['spades', 'clubs', 'hearts', 'diamonds']
 
 ## Functions
 
-### 1. create_cards_lambda 
+### 1. create_deck_cards_lambda 
 
 This function creates all 52 cards from vals and suits using lambda and map function in a single line
 

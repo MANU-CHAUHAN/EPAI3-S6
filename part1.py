@@ -1,5 +1,5 @@
 """
-Part 1 of tasks.
+Part 1 of tasks, concepts: lambda, map, reduce, filter, list comprehension
 """
 
 vals = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace']
