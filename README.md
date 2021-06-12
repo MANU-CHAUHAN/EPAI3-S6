@@ -174,7 +174,7 @@ Part 2:
 6. Write the above again from scratch where KA can be changed to DL, and 1000/9999 ranges can be provided. Now use a partial function such that 1000/9999 are hardcoded, but KA can be provided
 
 
-## Part 3:
+## Notes:
 
 ----------
 ### functools
@@ -259,6 +259,8 @@ Whereas, `[]` resorts to directly building a list, thus avoiding name resolution
 
 
 ## Dictionaries in Python: Going deeper in the rabbit hole
+Dictionary in Python play a pivotal role as they are the underlying mechanism for many language features such as classes and instances use dictionary to store their attributes.
+
 > [How are Python's built-in Dictionaries Implemented?](https://stackoverflow.com/a/44509302/3903762)
 
 1. They are hash tables
