@@ -264,7 +264,7 @@ Whereas, `[]` resorts to directly building a list, thus avoiding name resolution
 
 ## Dictionaries in Python: Going deeper in the rabbit hole
 
-Dictionary in Python play a pivotal role as they are the underlying mechanism for many language features such as: classes and instances use dictionary to store their attributes, module contents use dictionry and keyword arguments use them too.
+Dictionaries in Python plays a pivotal role as they are the underlying mechanism for many language features such as: classes and instances use dictionary to store their attributes, module contents use dictionry as well and keyword arguments within functions use them too.
 
 > [How are Python's built-in Dictionaries Implemented?](https://stackoverflow.com/a/44509302/3903762)
 
